@@ -13,7 +13,7 @@ namespace ZaitsevMS.Tyuiu.Sprint6.Task0.V0.Test
             DataService ds = new DataService();
             double res = ds.Calculate(7);
             double wait = 5.5;
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(wait, res); 
         }
     }
 }

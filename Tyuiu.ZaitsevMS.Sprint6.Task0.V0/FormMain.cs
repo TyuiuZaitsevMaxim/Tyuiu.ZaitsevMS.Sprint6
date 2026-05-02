@@ -36,7 +36,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task0.V0
         {
             if ((e.KeyChar <= 47) || (e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8))
             {
-                e.Handled = true;
+                e.Handled = true; 
             }
         }
     }
