@@ -31,7 +31,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task1.V0
         private TextBox textBoxResult;
 
         DataService ds = new DataService();
-
+         
         public FormMain()
         {
             InitializeComponent();
