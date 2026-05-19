@@ -13,7 +13,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V3
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(false); 
             Application.Run(new FormMain());
         }
     }

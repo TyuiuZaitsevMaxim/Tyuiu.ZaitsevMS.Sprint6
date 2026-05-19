@@ -5,7 +5,7 @@ using Tyuiu.ZaitsevMS.Sprint6.Task7.V3.Lib;
 namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V3.Test
 {
     [TestClass]
-    public class DataServiceTest
+    public class DataServiceTest 
     {
         [TestMethod]
         public void TestGetMatrix_ReplacesEvenInColumn0()

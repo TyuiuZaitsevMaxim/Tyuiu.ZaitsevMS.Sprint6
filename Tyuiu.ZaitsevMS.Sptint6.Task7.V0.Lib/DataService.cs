@@ -5,7 +5,7 @@ using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V3.Lib
 {
-    public class DataService : ISprint6Task7V3
+    public class DataService : ISprint6Task7V3 
     {
         public int[,] GetMatrix(string path)
         {
