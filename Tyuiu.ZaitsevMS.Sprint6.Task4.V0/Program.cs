@@ -11,7 +11,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task4.V14
     {
         /// <summary>
         /// The main entry point for the application.
-        /// </summary>
+        /// </summary> 
         [STAThread]
         static void Main()
         {

@@ -7,7 +7,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task4.V14.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestGetMassFunctionLength()
+        public void TestGetMassFunctionLength() 
         {
             DataService ds = new DataService();
             double[] result = ds.GetMassFunction(-5, 5);

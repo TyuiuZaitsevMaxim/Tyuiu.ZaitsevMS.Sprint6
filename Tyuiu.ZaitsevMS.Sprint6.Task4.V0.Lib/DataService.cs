@@ -4,7 +4,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task4.V14.Lib
 {
     public class DataService
     {
-        public double[] GetMassFunction(int startValue, int stopValue)
+        public double[] GetMassFunction(int startValue, int stopValue) 
         {
             int len = stopValue - startValue + 1;
             double[] valueArray = new double[len];
