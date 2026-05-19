@@ -8,7 +8,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V29.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestLoadFromDataFile()
+        public void TestLoadFromDataFile() 
         {
             DataService ds = new DataService();
             string path = Path.GetTempFileName();

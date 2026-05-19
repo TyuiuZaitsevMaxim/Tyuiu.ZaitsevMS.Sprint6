@@ -7,7 +7,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V29.Lib
 {
     public class DataService : ISprint6Task5V29
     {
-        public double[] LoadFromDataFile(string path)
+        public double[] LoadFromDataFile(string path) 
         {
             var lines = File.ReadAllLines(path);
             var result = new List<double>();

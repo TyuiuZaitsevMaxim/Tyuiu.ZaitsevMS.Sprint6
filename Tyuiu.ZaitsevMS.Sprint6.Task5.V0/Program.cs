@@ -8,7 +8,7 @@ using Tyuiu.ZaitsevMS.Sprint6.Task5.V29.Lib;
 namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V29
 {
     internal static class Program
-    {
+    { 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
