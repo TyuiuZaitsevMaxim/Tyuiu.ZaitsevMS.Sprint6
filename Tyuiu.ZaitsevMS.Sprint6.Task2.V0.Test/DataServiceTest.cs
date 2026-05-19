@@ -5,7 +5,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task2.V0.Test
 {
     [TestClass]
     public class DataServiceTest
-    {
+    { 
         [TestMethod]
         public void TestGetMassFunction()
         {

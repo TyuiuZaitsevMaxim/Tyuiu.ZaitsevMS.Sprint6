@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace Tyuiu.ZaitsevMS.Sprint6.Task2.V0
 {
     internal static class Program
-    {
+    { 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
