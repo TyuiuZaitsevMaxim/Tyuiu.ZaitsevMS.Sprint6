@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tyuiu.ZaitsevMS.Sprint6.Task6.V27.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V0
+namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V27
 {
     internal static class Program
     {

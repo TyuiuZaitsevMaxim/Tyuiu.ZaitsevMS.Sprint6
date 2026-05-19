@@ -3,15 +3,15 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using Tyuiu.ZaitsevMS.Sprint6.Task4.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint6.Task4.V14.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint6.Task4.V0
+namespace Tyuiu.ZaitsevMS.Sprint6.Task4.V14
 {
     public partial class FormMain : Form
     {
         private const int StartStep_ZMS = -5;
         private const int StopStep_ZMS = 5;
-        private const string OutputFileName_ZMS = "OutputFileTask4.txt";
+        private const string OutputFileName_ZMS = "OutPutFileTask4V14.txt";
 
         DataService ds_ZMS = new DataService();
 
@@ -62,7 +62,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task4.V0
             chartFunction_ZMS.Series[0].Points.Clear();
 
             textBoxResult_ZMS.AppendText("+----------+----------+" + Environment.NewLine);
-            textBoxResult_ZMS.AppendText("|    x     |  sin(x)  |" + Environment.NewLine);
+            textBoxResult_ZMS.AppendText("|    x     |   F(x)   |" + Environment.NewLine);
             textBoxResult_ZMS.AppendText("+----------+----------+" + Environment.NewLine);
 
             for (int i = 0; i < valueArray.Length; i++)

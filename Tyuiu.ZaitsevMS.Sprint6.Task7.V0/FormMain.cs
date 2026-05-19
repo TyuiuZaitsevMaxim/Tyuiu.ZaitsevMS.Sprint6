@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
-using Tyuiu.ZaitsevMS.Sptint6.Task7.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint6.Task7.V3.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V0
+namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V3
 {
     public partial class FormMain : Form
     {
@@ -22,9 +22,27 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V0
             if (openFileDialogTask_ZMS.ShowDialog() != DialogResult.OK) return;
 
             string path = openFileDialogTask_ZMS.FileName;
-            int[,] matrix = dataService_ZMS.LoadFromCsv(path);
 
-            FillDataGridView(dataGridViewIn_ZMS, matrix);
+            string[] lines = File.ReadAllLines(path);
+            dataGridViewIn_ZMS.Rows.Clear();
+            dataGridViewIn_ZMS.Columns.Clear();
+
+            if (lines.Length == 0) return;
+
+            int cols = lines[0].Split(',').Length;
+            for (int j = 0; j < cols; j++)
+                dataGridViewIn_ZMS.Columns.Add("col" + j, j.ToString());
+
+            foreach (var line in lines)
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;
+                string[] parts = line.Split(',');
+                var row = new DataGridViewRow();
+                row.CreateCells(dataGridViewIn_ZMS);
+                for (int j = 0; j < parts.Length; j++)
+                    row.Cells[j].Value = int.Parse(parts[j].Trim());
+                dataGridViewIn_ZMS.Rows.Add(row);
+            }
 
             groupBoxInput_ZMS.Text = "Ввод: " + path;
             buttonDone_ZMS.Enabled = true;
@@ -35,15 +53,8 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V0
 
         private void buttonDone_ZMS_Click(object sender, EventArgs e)
         {
-            int rows = dataGridViewIn_ZMS.Rows.Count;
-            int cols = dataGridViewIn_ZMS.Columns.Count;
-            int[,] matrix = new int[rows, cols];
-
-            for (int i = 0; i < rows; i++)
-                for (int j = 0; j < cols; j++)
-                    matrix[i, j] = int.Parse(dataGridViewIn_ZMS.Rows[i].Cells[j].Value.ToString());
-
-            matrixResult_ZMS = dataService_ZMS.GetMatrix(matrix);
+            string path = openFileDialogTask_ZMS.FileName;
+            matrixResult_ZMS = dataService_ZMS.GetMatrix(path);
             FillDataGridView(dataGridViewOut_ZMS, matrixResult_ZMS);
             buttonSave_ZMS.Enabled = true;
         }

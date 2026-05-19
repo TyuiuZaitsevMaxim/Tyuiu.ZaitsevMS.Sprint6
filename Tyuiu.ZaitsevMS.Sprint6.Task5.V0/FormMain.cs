@@ -2,13 +2,13 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
-using Tyuiu.ZaitsevMS.Sprint6.Task5.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint6.Task5.V29.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
+namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V29
 {
     public partial class FormMain : Form
     {
-        private readonly string path_ZMS = Path.Combine(Application.StartupPath, "InputFileTask5.txt");
+        private readonly string path_ZMS = Path.Combine(Application.StartupPath, "InPutFileTask5V29.txt");
         DataService ds_ZMS = new DataService();
 
         public FormMain()
@@ -33,7 +33,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Не удалось прочитать файл InputFileTask5.txt\n{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Не удалось прочитать файл InPutFileTask5V29.txt\n{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -45,7 +45,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
             }
             else
             {
-                MessageBox.Show("Файл InputFileTask5.txt не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Файл InPutFileTask5V29.txt не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

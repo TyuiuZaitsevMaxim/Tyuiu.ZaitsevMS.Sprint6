@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0CFE9D58-17C9-4643-AE36-982242C53EC4}</ProjectGuid>
+    <ProjectGuid>{635C3B1F-58D5-4547-A281-E0C29D611019}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.ZaitsevMS.Sprint6.Task3.V0.Test</RootNamespace>
-    <AssemblyName>Tyuiu.ZaitsevMS.Sprint6.Task3.V0.Test</AssemblyName>
+    <RootNamespace>Tyuiu.ZaitsevMS.Sprint6.Task4.V0.Test</RootNamespace>
+    <AssemblyName>Tyuiu.ZaitsevMS.Sprint6.Task4.V0.Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.ZaitsevMS.Sprint6.Task3.V0.Lib\Tyuiu.ZaitsevMS.Sprint6.Task3.V0.Lib.csproj">
-      <Project>{d9e5519a-f6a5-4de3-a2a6-444125f1d4a3}</Project>
-      <Name>Tyuiu.ZaitsevMS.Sprint6.Task3.V0.Lib</Name>
+    <ProjectReference Include="..\Tyuiu.ZaitsevMS.Sprint6.Task4.V0.Lib\Tyuiu.ZaitsevMS.Sprint6.Task4.V14.Lib.csproj">
+      <Project>{c629ae29-b2e6-4372-8d81-14f788a45441}</Project>
+      <Name>Tyuiu.ZaitsevMS.Sprint6.Task4.V14.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

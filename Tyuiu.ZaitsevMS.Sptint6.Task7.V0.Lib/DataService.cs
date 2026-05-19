@@ -1,27 +1,13 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using tyuiu.cources.programming.interfaces.Sprint6;
 
-namespace Tyuiu.ZaitsevMS.Sptint6.Task7.V0.Lib
+namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V3.Lib
 {
-    public class DataService : ISprint6Task7V0
+    public class DataService : ISprint6Task7V3
     {
-        public int[,] GetMatrix(int[,] matrix)
-        {
-            int rows = matrix.GetLength(0);
-            int cols = matrix.GetLength(1);
-            int[,] result = new int[rows, cols];
-
-            for (int i = 0; i < rows; i++)
-                for (int j = 0; j < cols; j++)
-                    result[i, j] = (j == 2 && matrix[i, j] == 0) ? 1 : matrix[i, j];
-
-            return result;
-        }
-
-        public int[,] LoadFromCsv(string path)
+        public int[,] GetMatrix(string path)
         {
             string[] lines = File.ReadAllLines(path)
                 .Where(l => !string.IsNullOrWhiteSpace(l))
@@ -35,7 +21,13 @@ namespace Tyuiu.ZaitsevMS.Sptint6.Task7.V0.Lib
             {
                 string[] parts = lines[i].Split(',');
                 for (int j = 0; j < cols; j++)
-                    matrix[i, j] = int.Parse(parts[j].Trim());
+                {
+                    int val = int.Parse(parts[j].Trim());
+                    if (j == 0 && val % 2 == 0)
+                        matrix[i, j] = -1;
+                    else
+                        matrix[i, j] = val;
+                }
             }
 
             return matrix;

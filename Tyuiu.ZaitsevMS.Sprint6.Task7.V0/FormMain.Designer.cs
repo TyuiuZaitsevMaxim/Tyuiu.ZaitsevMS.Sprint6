@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V0
+﻿namespace Tyuiu.ZaitsevMS.Sprint6.Task7.V3
 {
     partial class FormMain
     {
@@ -93,7 +93,7 @@
             this.labelCondition_ZMS.Name = "labelCondition_ZMS";
             this.labelCondition_ZMS.Size = new System.Drawing.Size(788, 36);
             this.labelCondition_ZMS.TabIndex = 0;
-            this.labelCondition_ZMS.Text = "Дан файл InputFileTask7.csv с матрицей целочисленных значений. Загрузить файл через openFileDialog в dataGridViewIn. Изменить в столбце №2 значения 0 на 1. Результат вывести в dataGridViewOut. Сохранить результат в OutputFileTask7.csv через saveFileDialog.";
+            this.labelCondition_ZMS.Text = "Дан файл InPutFileTask7V3.csv с матрицей целочисленных значений. Загрузить файл через openFileDialog в dataGridViewIn. Изменить в первом столбце чётные значения на -1. Результат вывести в dataGridViewOut. Сохранить в OutPutFileTask7.csv через saveFileDialog.";
             // 
             // groupBoxInput_ZMS
             // 
@@ -148,7 +148,7 @@
             // saveFileDialogTask_ZMS
             // 
             this.saveFileDialogTask_ZMS.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*";
-            this.saveFileDialogTask_ZMS.FileName = "OutputFileTask7.csv";
+            this.saveFileDialogTask_ZMS.FileName = "OutPutFileTask7.csv";
             // 
             // FormMain
             // 
@@ -164,7 +164,7 @@
             this.Controls.Add(this.buttonOpenFile_ZMS);
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "FormMain";
-            this.Text = "Tyuiu.ZaitsevMS.Sprint6.Task7.V0";
+            this.Text = "Спринт 6 | Таск 7 | Вариант 3 | Зайцев М.С.";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBoxCondition_ZMS.ResumeLayout(false);
             this.groupBoxInput_ZMS.ResumeLayout(false);

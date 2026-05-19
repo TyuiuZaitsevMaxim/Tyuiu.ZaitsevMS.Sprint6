@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
-using Tyuiu.ZaitsevMS.Sprint6.Task6.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint6.Task6.V27.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V0
+namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V27
 {
     public partial class FormMain : Form
     {

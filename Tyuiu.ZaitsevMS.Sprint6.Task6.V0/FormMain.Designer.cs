@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V0
+﻿namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V27
 {
     partial class FormMain
     {
@@ -82,7 +82,7 @@
             this.labelCondition_ZMS.Name = "labelCondition_ZMS";
             this.labelCondition_ZMS.Size = new System.Drawing.Size(788, 36);
             this.labelCondition_ZMS.TabIndex = 0;
-            this.labelCondition_ZMS.Text = "Дан InputFileTask6.txt, который может находиться в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Найти все вхождения символов \"**\". В строках, где есть указанный набор символов — вывести каждую строку в textBoxOut.";
+            this.labelCondition_ZMS.Text = "Дан файл InPutFileTask6V27.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Вывести слова в которых встречается H в результирующею строку и вывести ее в textBoxOut.";
             // 
             // openFileDialogTask_ZMS
             // 
@@ -146,7 +146,7 @@
             this.Controls.Add(this.buttonOpenFile_ZMS);
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "FormMain";
-            this.Text = "Tyuiu.ZaitsevMS.Sprint6.Task6.V0";
+            this.Text = "Спринт 6 | Таск 6 | Вариант 27 | Зайцев М.С.";
             this.groupBoxCondition_ZMS.ResumeLayout(false);
             this.groupBoxInput_ZMS.ResumeLayout(false);
             this.groupBoxInput_ZMS.PerformLayout();

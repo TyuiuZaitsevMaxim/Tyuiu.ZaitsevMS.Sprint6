@@ -1,4 +1,4 @@
-namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
+namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V29
 {
     partial class FormMain
     {
@@ -100,7 +100,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
             this.labelCondition_ZMS.Padding = new System.Windows.Forms.Padding(4);
             this.labelCondition_ZMS.Size = new System.Drawing.Size(590, 89);
             this.labelCondition_ZMS.TabIndex = 0;
-            this.labelCondition_ZMS.Text = "Прочитать данные из файла InputFileTask5.txt. Вывести в dataGridView положительные значения и построить диаграмму по этим значениям.";
+            this.labelCondition_ZMS.Text = "Прочитать данные из файла InPutFileTask5V29.txt. Вывести в dataGridView все числа >= 10. Построить диаграмму по этим значениям. У вещественных значений округлить до трёх знаков после запятой.";
             // 
             // buttonDone_ZMS
             // 
@@ -214,7 +214,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
             this.chartResult_ZMS.Name = "chartResult_ZMS";
             series_ZMS.ChartArea = "ChartArea_ZMS";
             series_ZMS.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
-            series_ZMS.Name = "Положительные значения";
+            series_ZMS.Name = "Значения >= 10";
             this.chartResult_ZMS.Series.Add(series_ZMS);
             this.chartResult_ZMS.Size = new System.Drawing.Size(570, 400);
             this.chartResult_ZMS.TabIndex = 0;
@@ -227,7 +227,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
             this.MinimumSize = new System.Drawing.Size(820, 500);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Спринт 6 | Таск 5 | Вариант 0 | Зайцев М.С.";
+            this.Text = "Спринт 6 | Таск 5 | Вариант 29 | Зайцев М.С.";
             this.tableLayoutPanelMain_ZMS.ResumeLayout(false);
             this.tableLayoutPanelTop_ZMS.ResumeLayout(false);
             this.groupBoxCondition_ZMS.ResumeLayout(false);
@@ -240,7 +240,6 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task5.V0
             this.groupBoxChart_ZMS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartResult_ZMS)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
