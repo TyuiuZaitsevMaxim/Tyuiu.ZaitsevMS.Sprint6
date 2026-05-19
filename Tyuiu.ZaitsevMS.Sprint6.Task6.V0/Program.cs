@@ -9,7 +9,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V27
 {
     internal static class Program
     {
-        /// <summary>
+        /// <summary> 
         /// The main entry point for the application.
         /// </summary>
         [STAThread]

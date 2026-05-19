@@ -7,7 +7,7 @@ namespace Tyuiu.ZaitsevMS.Sprint6.Task6.V27.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestCollectTextFromFile_ReturnsWordsWithH()
+        public void TestCollectTextFromFile_ReturnsWordsWithH() 
         {
             DataService ds = new DataService();
             string input = "Hello World\nHouse cat\nno match here";
